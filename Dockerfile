@@ -1,4 +1,4 @@
-FROM node:13-alpine
+FROM node:14
 
 RUN mkdir -p /home/app
 
@@ -9,4 +9,3 @@ WORKDIR /home/app
 RUN npm install
 
 CMD ["node", "server.js"]
-
